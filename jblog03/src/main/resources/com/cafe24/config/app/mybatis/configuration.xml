@@ -2,13 +2,17 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="uservo" type="com.cafe24.mysite.vo.UserVo" />
-		<typeAlias alias="guestbookvo" type="com.cafe24.mysite.vo.GuestbookVo" />
-		<typeAlias alias="boardvo" type="com.cafe24.mysite.vo.BoardVo" />
-    </typeAliases>	
+		<typeAlias alias="blogvo" type="com.cafe24.jblog.vo.BlogVo"></typeAlias>
+		<typeAlias alias="categoryvo" type="com.cafe24.jblog.vo.CategoryVo"></typeAlias>
+		<typeAlias alias="postvo" type="com.cafe24.jblog.vo.PostVo"></typeAlias>
+		<typeAlias alias="uservo" type="com.cafe24.jblog.vo.UserVo"></typeAlias>
+    </typeAliases>
+    	
+    <!-- SQL파일이 실제 위치하는곳. -->
 	<mappers>
-		<mapper resource="com/cafe24/config/app/mybatis/mappers/user.xml" />
-		<mapper resource="com/cafe24/config/app/mybatis/mappers/guestbook.xml" />
-		<mapper resource="com/cafe24/config/app/mybatis/mappers/board.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/blog.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/user.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/category.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/post.xml" />
 	</mappers>
 </configuration>

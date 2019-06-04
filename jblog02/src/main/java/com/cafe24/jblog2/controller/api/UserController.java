@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.cafe24.jblog2.dto.JsonResult;
 import com.cafe24.jblog2.service.UserService;
-import com.cafe24.mysite.dto.JsonResult;
 
 @Controller("userAPIController")
 @RequestMapping("/user/api")
